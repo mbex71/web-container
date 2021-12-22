@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import DynamicComponent from '../components/Judul'
+
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
+        
+        <DynamicComponent/>
 
         <p className={styles.description}>
           Get started by editing{' '}
